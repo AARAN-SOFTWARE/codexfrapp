@@ -1,69 +1,41 @@
-```markdown
-# CodexFrapp
+### Codexfrapp
 
-**Where Code Meets Frappe Intelligence**
+Where Code Meets Frappe Intelligence
 
-CodexFrapp is a developer-first extension framework built on top of Frappe, designed to accelerate the development of scalable, modular, and intelligent custom ERP apps. It blends clean coding principles with the smart features of the Frappe ecosystem—making it perfect for building CRMs, HR systems, Inventory modules, and more.
+### Installation
 
----
-
-## 🚀 Features
-
-- 🔧 Modular Architecture (pluggable apps and components)
-- ⚙️ CLI-ready Code Scaffolding (Doctypes, Controllers, Routes)
-- 🔐 Auth-ready Base Structure (JWT/Token/session options)
-- 🌐 API-first Design with RESTful principles
-- 🧱 Reusable Components (models, views, forms, etc.)
-- 🔄 Built-in Migration and Seeder System
-- 📦 Easy integration into ERPNext or custom Frappe stacks
-
----
-
-## 📂 App Structure
-
-```
-
-codexfrapp/
-├── codexfrapp/         # Main Python module
-├── codexfrapp/public/  # Static files (JS/CSS/images)
-├── codexfrapp/config/  # App config
-├── codexfrapp/modules/ # Custom modules (e.g., crm, hr, etc.)
-├── hooks.py            # Frappe app hooks
-├── MANIFEST.in
-├── README.md
-└── setup.py
-
-````
-
----
-
-## 📦 Installation
+You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
-# Inside your bench folder
-$ bench get-app codexfrapp https://github.com/your-org/codexfrapp.git
-$ bench --site yoursite install-app codexfrapp
-````
+cd $PATH_TO_YOUR_BENCH
+bench get-app $URL_OF_THIS_REPO --branch develop
+bench install-app codexfrapp
+```
 
----
+### Contributing
 
-## 🧠 Philosophy
+This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
 
-CodexFrapp follows the Codexsun principle: **separation of core, modules, and site logic**. Every module is built to scale independently while leveraging Frappe’s real-time and meta-driven intelligence.
+```bash
+cd apps/codexfrapp
+pre-commit install
+```
 
----
+Pre-commit is configured to use the following tools for checking and formatting your code:
 
-## 🛠 Developer Guide
+- ruff
+- eslint
+- prettier
+- pyupgrade
 
-* Use `bench new-doctype` or `frappe.get_doc()` to interact with custom models
-* All business logic resides in `controller/`
-* API routes registered under `routes/`
-* Supports Swagger/Postman API testing
+### CI
 
----
+This app can use GitHub Actions for CI. The following workflows are configured:
 
-## 📄 License
+- CI: Installs this app and runs unit tests on every push to `develop` branch.
+- Linters: Runs [Frappe Semgrep Rules](https://github.com/frappe/semgrep-rules) and [pip-audit](https://pypi.org/project/pip-audit/) on every pull request.
 
-This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
 
----
+### License
+
+mit
