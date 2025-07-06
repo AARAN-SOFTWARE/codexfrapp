@@ -41,8 +41,8 @@ codexfrapp/
 
 ```bash
 # Inside your bench folder
-$ bench get-app codexfrapp https://github.com/your-org/codexfrapp.git
-$ bench --site yoursite install-app codexfrapp
+$ bench get-app codexfrapp https://github.com/AARAN-SOFTWARE/codexfrapp.git
+$ bench --site dev.aaranerp.com install-app codexfrapp
 ````
 
 ---
