@@ -9,9 +9,11 @@
   "section_break_djw4",
   "item",
   "item_name",
+  "purchase_receipt_ref",
   "received_qty",
   "barcode",
   "barcode_preview",
+  "serial_no",
   "missing_tab",
   "missing_barcode",
   "reprint_barcode"
@@ -67,12 +69,23 @@
    "fieldname": "missing_barcode",
    "fieldtype": "Section Break",
    "label": "Missing Barcode"
+  },
+  {
+   "fieldname": "purchase_receipt_ref",
+   "fieldtype": "Link",
+   "label": "Purchase Receipt Ref",
+   "options": "Purchase Receipt"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Small Text",
+   "label": "Serial No"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-06 18:33:51.801768",
+ "modified": "2025-07-07 01:46:19.096696",
  "modified_by": "Administrator",
  "module": "Codexfrapp",
  "name": "Barcode Generator",
