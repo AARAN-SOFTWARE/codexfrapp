@@ -4,11 +4,11 @@ app_publisher = "Aaran Software"
 app_description = "Where Code Meets Frappe Intelligence"
 app_email = "info@aaransoftware.com"
 app_license = "mit"
-doc_events = {
-  "Barcode Generator": {
-    "before_insert": "codexfrapp.codexfrapp.doctype.barcode_generator.barcode_generator.before_insert"
-  }
+doctype_js = {
+    "Barcode Generator": "codexfrapp/doctype/barcode_generator/barcode_generator.js"
 }
+
+ 
 
 # Apps
 # ------------------
