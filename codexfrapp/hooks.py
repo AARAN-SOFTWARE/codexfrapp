@@ -5,7 +5,9 @@ app_description = "Where Code Meets Frappe Intelligence"
 app_email = "info@aaransoftware.com"
 app_license = "mit"
 doctype_js = {
-    "Barcode Generator": "codexfrapp/doctype/barcode_generator/barcode_generator.js"
+    "Barcode Generator": "codexfrapp/doctype/barcode_generator/barcode_generator.js",
+    "Serial and Barcode": "codexfrapp/doctype/serial_and_barcode/serial_and_barcode.js",
+ 
 }
 
  

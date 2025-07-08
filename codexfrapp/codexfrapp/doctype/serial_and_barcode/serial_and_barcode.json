@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:item_name",
+ "creation": "2025-07-08 19:19:35.471837",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_zqut",
+  "item_code",
+  "item_name",
+  "qty",
+  "serial_no",
+  "html",
+  "tab_break_oiaa",
+  "missing_section",
+  "missing_no",
+  "missing_range",
+  "missing_barcode_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_zqut",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Qty",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "html",
+   "fieldtype": "HTML",
+   "label": "Barcode HTML"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Serial No",
+   "options": "Serial Detail"
+  },
+  {
+   "fieldname": "missing_no",
+   "fieldtype": "Data",
+   "label": "Missing No"
+  },
+  {
+   "fieldname": "tab_break_oiaa",
+   "fieldtype": "Tab Break",
+   "in_preview": 1,
+   "label": "Missing Barcode"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "missing_section",
+   "fieldtype": "Section Break",
+   "label": "Missing"
+  },
+  {
+   "fieldname": "missing_barcode_html",
+   "fieldtype": "HTML",
+   "label": "Barcode Preview"
+  },
+  {
+   "fieldname": "missing_range",
+   "fieldtype": "Data",
+   "label": "Missing No Range"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-08 23:20:02.939692",
+ "modified_by": "Administrator",
+ "module": "Codexfrapp",
+ "name": "Serial and Barcode",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
