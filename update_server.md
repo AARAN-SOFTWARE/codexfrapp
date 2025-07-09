@@ -1,8 +1,6 @@
-To **create a shell script** on Ubuntu (or any Linux distribution), follow these steps:
+# Update Command
 
----
-
-### ✅ Step-by-Step Command to Create a Shell Script
+## ✅ Command to Create a Shell Script
 
 ```bash
 nano update_codexfrapp.sh
