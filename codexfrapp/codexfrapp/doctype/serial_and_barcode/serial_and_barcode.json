@@ -11,12 +11,7 @@
   "item_name",
   "qty",
   "serial_no",
-  "html",
-  "tab_break_oiaa",
-  "missing_section",
-  "missing_no",
-  "missing_range",
-  "missing_barcode_html"
+  "html"
  ],
  "fields": [
   {
@@ -59,39 +54,12 @@
    "hidden": 1,
    "label": "Serial No",
    "options": "Serial Detail"
-  },
-  {
-   "fieldname": "missing_no",
-   "fieldtype": "Data",
-   "label": "Missing No"
-  },
-  {
-   "fieldname": "tab_break_oiaa",
-   "fieldtype": "Tab Break",
-   "in_preview": 1,
-   "label": "Missing Barcode"
-  },
-  {
-   "allow_in_quick_entry": 1,
-   "fieldname": "missing_section",
-   "fieldtype": "Section Break",
-   "label": "Missing"
-  },
-  {
-   "fieldname": "missing_barcode_html",
-   "fieldtype": "HTML",
-   "label": "Barcode Preview"
-  },
-  {
-   "fieldname": "missing_range",
-   "fieldtype": "Data",
-   "label": "Missing No Range"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-08 23:20:02.939692",
+ "modified": "2025-07-09 11:46:42.390372",
  "modified_by": "Administrator",
  "module": "Codexfrapp",
  "name": "Serial and Barcode",
