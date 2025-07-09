@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:serial_no",
+ "creation": "2025-07-08 22:15:22.304549",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_hzor",
+  "serial_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_hzor",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No",
+   "unique": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-08 22:16:34.675595",
+ "modified_by": "Administrator",
+ "module": "Codexfrapp",
+ "name": "Serial Detail",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

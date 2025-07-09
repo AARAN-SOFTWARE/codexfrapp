@@ -13,10 +13,7 @@
   "received_qty",
   "barcode",
   "barcode_preview",
-  "serial_no",
-  "missing_tab",
-  "missing_barcode",
-  "reprint_barcode"
+  "serial_no"
  ],
  "fields": [
   {
@@ -56,21 +53,6 @@
    "label": "Barcode Preview"
   },
   {
-   "fieldname": "reprint_barcode",
-   "fieldtype": "Data",
-   "label": "Reprint Barcode"
-  },
-  {
-   "fieldname": "missing_tab",
-   "fieldtype": "Tab Break",
-   "label": "Missing"
-  },
-  {
-   "fieldname": "missing_barcode",
-   "fieldtype": "Section Break",
-   "label": "Missing Barcode"
-  },
-  {
    "fieldname": "purchase_receipt_ref",
    "fieldtype": "Link",
    "label": "Purchase Receipt Ref",
@@ -85,7 +67,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-07 01:46:19.096696",
+ "modified": "2025-07-07 11:31:53.056199",
  "modified_by": "Administrator",
  "module": "Codexfrapp",
  "name": "Barcode Generator",
