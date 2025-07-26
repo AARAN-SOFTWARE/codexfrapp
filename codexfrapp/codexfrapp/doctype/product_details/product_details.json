@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:product_name",
+ "creation": "2025-07-19 12:46:42.128553",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enter_product_details_section",
+  "product_name",
+  "product_type",
+  "hsn_code",
+  "units",
+  "gst_percent"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "placeholder": "Enter your new product name",
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "product_type",
+   "fieldtype": "Select",
+   "label": "Product Type",
+   "options": "\nGoods\nServices",
+   "placeholder": "choose your product type"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "hsn_code",
+   "fieldtype": "Data",
+   "label": "HSN code"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "units",
+   "fieldtype": "Select",
+   "label": "Units",
+   "options": "\nKgs\nMts\nPcs\nLts\nNos",
+   "placeholder": "choose"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "gst_percent",
+   "fieldtype": "Select",
+   "label": "Gst Percent %",
+   "options": "\n0\n5\n12\n18\n24",
+   "placeholder": "choose"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "enter_product_details_section",
+   "fieldtype": "Section Break",
+   "label": "Enter Product Details"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-19 21:51:35.194978",
+ "modified_by": "Administrator",
+ "module": "Codexfrapp",
+ "name": "Product Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

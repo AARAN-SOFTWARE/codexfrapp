@@ -1,0 +1,17 @@
+ 
+.grid-add-row {
+  background-color: #28a745 !important; /* Bootstrap 'success' green */
+  color: white !important;
+  border-color: #28a745 !important;
+}
+
+/* .green-btn {
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 8px 16px;
+  background-color: #28a745;
+  border-radius:none;
+  margin-top: 10px;
+ 
+} */
