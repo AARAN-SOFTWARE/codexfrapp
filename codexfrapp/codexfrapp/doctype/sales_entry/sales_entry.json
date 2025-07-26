@@ -1,0 +1,194 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:invoice_no",
+ "creation": "2025-07-19 11:28:34.816528",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "party_name",
+  "order_no",
+  "billing_address",
+  "shipping_address",
+  "column_break_bwmk",
+  "invoice_no",
+  "invoice_date",
+  "sales_type",
+  "style",
+  "dispatch_no",
+  "sales_item_details_section",
+  "sales_item_details_column",
+  "add_item_custom_btn",
+  "sales_item",
+  "section_break_gdkg",
+  "column_break_xcal",
+  "total_qty",
+  "column_break_btfu",
+  "total_taxable",
+  "column_break_vpvl",
+  "total_gst",
+  "column_break_ngkm",
+  "grand_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Party Name",
+   "options": "Contact Entry",
+   "reqd": 1
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Link",
+   "label": "Order No",
+   "options": "Orders"
+  },
+  {
+   "fetch_from": "party_name.address",
+   "fieldname": "billing_address",
+   "fieldtype": "Data",
+   "label": "Billing Address",
+   "placeholder": "Enter your billing address"
+  },
+  {
+   "fetch_from": "party_name.address",
+   "fieldname": "shipping_address",
+   "fieldtype": "Data",
+   "label": "Shipping Address",
+   "placeholder": "Enter your Shipping Address"
+  },
+  {
+   "fieldname": "column_break_bwmk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Int",
+   "label": "Invoice No(note: if its leave empty, it autofill with respect to the order)",
+   "unique": 1
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date",
+   "placeholder": " Choose the date"
+  },
+  {
+   "fieldname": "sales_type",
+   "fieldtype": "Select",
+   "label": "Sales Type",
+   "options": "\nCGST+SGST\nIGST",
+   "placeholder": "choose the type"
+  },
+  {
+   "fieldname": "style",
+   "fieldtype": "Link",
+   "label": "Style",
+   "options": "Style",
+   "placeholder": "Enter style Name"
+  },
+  {
+   "fieldname": "sales_item",
+   "fieldtype": "Table",
+   "label": "Sales Item",
+   "options": "Sales Item Details"
+  },
+  {
+   "fieldname": "section_break_gdkg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Currency",
+   "label": "Total Qty",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_taxable",
+   "fieldtype": "Currency",
+   "label": "Total Taxable",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xcal",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_btfu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_gst",
+   "fieldtype": "Currency",
+   "label": "Total GST",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vpvl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_item_details_column",
+   "fieldtype": "Column Break",
+   "label": "Sales Item Details"
+  },
+  {
+   "fieldname": "sales_item_details_section",
+   "fieldtype": "Section Break",
+   "label": " "
+  },
+  {
+   "fieldname": "column_break_ngkm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "add_item_custom_btn",
+   "fieldtype": "HTML",
+   "label": "Add Item Button"
+  },
+  {
+   "fieldname": "dispatch_no",
+   "fieldtype": "Link",
+   "label": "Dispatch No",
+   "options": "Dispatch"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-25 18:35:27.721616",
+ "modified_by": "Administrator",
+ "module": "Codexfrapp",
+ "name": "Sales Entry",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

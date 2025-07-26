@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": " ",
+ "creation": "2025-07-19 12:25:25.458316",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product",
+  "color",
+  "size",
+  "qty",
+  "price",
+  "taxable",
+  "gst_percent",
+  "gst",
+  "subtotal",
+  "section_break_fzef",
+  "hsn_code",
+  "link_field_from_sales_entry_section",
+  "sales_type_copy"
+ ],
+ "fields": [
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Product Details"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Link",
+   "label": "Color",
+   "options": "Color List"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Link",
+   "label": "Size",
+   "options": "Size"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "QTY"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Float",
+   "label": "Price"
+  },
+  {
+   "fieldname": "taxable",
+   "fieldtype": "Currency",
+   "label": "Taxable",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "product.gst_percent",
+   "fieldname": "gst_percent",
+   "fieldtype": "Data",
+   "label": "GST Percent",
+   "options": " ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gst",
+   "fieldtype": "Currency",
+   "label": "GST",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "subtotal",
+   "fieldtype": "Currency",
+   "label": "Subtotal",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "product.hsn_code",
+   "fieldname": "hsn_code",
+   "fieldtype": "Data",
+   "label": "HSN Code",
+   "options": " "
+  },
+  {
+   "fieldname": "section_break_fzef",
+   "fieldtype": "Section Break",
+   "label": "Link field from Product Details"
+  },
+  {
+   "fieldname": "link_field_from_sales_entry_section",
+   "fieldtype": "Section Break",
+   "label": "Link field from Sales Entry"
+  },
+  {
+   "fetch_from": "sales_entry_link.sales_type",
+   "fieldname": "sales_type_copy",
+   "fieldtype": "Data",
+   "label": "Sales type "
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-26 19:54:46.387431",
+ "modified_by": "Administrator",
+ "module": "Codexfrapp",
+ "name": "Sales Item Details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

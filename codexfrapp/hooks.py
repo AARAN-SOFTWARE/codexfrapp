@@ -9,7 +9,7 @@ doctype_js = {
     "Serial and Barcode": "codexfrapp/doctype/serial_and_barcode/serial_and_barcode.js",
  
 }
-
+app_include_css = "assets/codexfrapp/css/sales_entry.css"
  
 
 # Apps
