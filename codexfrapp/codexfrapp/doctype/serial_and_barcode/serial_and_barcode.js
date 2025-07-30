@@ -3,12 +3,7 @@
 
  
 frappe.ui.form.on('Serial and Barcode', {
-	before_print(frm) {
-		// Clear both fields just before printing
-		frm.set_value('missing_no', '');
-		frm.set_value('missing_range', '');
-	},
-
+ 
 	item_code(frm) {
 		if (frm.doc.item_code) {
 			frappe.db.get_value('Item', frm.doc.item_code, 'item_name')

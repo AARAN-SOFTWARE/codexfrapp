@@ -9,6 +9,16 @@ doctype_js = {
     "Serial and Barcode": "codexfrapp/doctype/serial_and_barcode/serial_and_barcode.js",
  
 }
+app_include_css = "assets/codexfrapp/css/sales_entry.css"
+
+fixtures = [
+    "Custom Field",
+    "Property Setter",
+    # "Custom Script",
+    "Print Format",
+    "Client Script",
+    "Workflow"
+]
 
  
 

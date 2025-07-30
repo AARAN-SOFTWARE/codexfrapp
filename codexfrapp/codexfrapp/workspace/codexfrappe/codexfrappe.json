@@ -1,0 +1,38 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"zV7UYKcE5j\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Codexfrappe</span>\",\"col\":12}},{\"id\":\"3gLXXqkef5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Serial and Barcode\",\"col\":3}}]",
+ "creation": "2025-07-10 00:59:31.262476",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "today",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 1,
+ "label": "Codexfrappe",
+ "links": [],
+ "modified": "2025-07-10 13:02:28.306485",
+ "modified_by": "Administrator",
+ "module": "Codexfrapp",
+ "name": "Codexfrappe",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 3.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Serial and Barcode",
+   "link_to": "Serial and Barcode",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Codexfrappe"
+}
